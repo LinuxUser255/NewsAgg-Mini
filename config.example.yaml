@@ -1,0 +1,67 @@
+# NewsAgg-Mini Configuration
+# Copy this to config.yaml and customize
+
+# RSS/Atom feed sources
+feeds:
+  - url: https://hnrss.org/frontpage
+    name: Hacker News
+  
+  - url: https://feeds.arstechnica.com/arstechnica/index
+    name: Ars Technica
+  
+  # Add more feeds here:
+  # - url: https://example.com/rss
+  #   name: Example News
+
+# Topics to track (keyword-based classification)
+topics:
+  - name: AI
+    keywords:
+      - ai
+      - artificial intelligence
+      - machine learning
+      - gpt
+      - llm
+      - neural
+      - deep learning
+      - openai
+      - anthropic
+    exclude: []  # Words that disqualify an article
+  
+  - name: Security
+    keywords:
+      - security
+      - vulnerability
+      - breach
+      - hack
+      - cyber
+      - malware
+      - ransomware
+      - exploit
+      - zero-day
+    exclude: []
+  
+  - name: Programming
+    keywords:
+      - python
+      - javascript
+      - rust
+      - golang
+      - java
+      - programming
+      - coding
+      - developer
+      - github
+      - framework
+    exclude:
+      - job
+      - hiring  # Exclude job postings
+  
+  # Add your own topics:
+  # - name: Linux
+  #   keywords:
+  #     - linux
+  #     - ubuntu
+  #     - debian
+  #     - kernel
+  #   exclude: []
